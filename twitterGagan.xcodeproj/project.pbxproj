@@ -14,6 +14,11 @@
 		CEC23F371B5F74E40080E31D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC23F361B5F74E40080E31D /* Images.xcassets */; };
 		CEC23F3A1B5F74E40080E31D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC23F381B5F74E40080E31D /* LaunchScreen.xib */; };
 		CEC23F461B5F74E50080E31D /* twitterGaganTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC23F451B5F74E40080E31D /* twitterGaganTests.m */; };
+		CEC23F541B5F75F90080E31D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC23F501B5F75F90080E31D /* Fabric.framework */; };
+		CEC23F551B5F75F90080E31D /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC23F511B5F75F90080E31D /* TwitterKit.framework */; };
+		CEC23F561B5F75F90080E31D /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEC23F521B5F75F90080E31D /* TwitterKitResources.bundle */; };
+		CEC23F571B5F75F90080E31D /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC23F531B5F75F90080E31D /* TwitterCore.framework */; };
+		CEC23F591B5F7FC10080E31D /* twitter Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC23F581B5F7FC10080E31D /* twitter Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		CEC23F3F1B5F74E40080E31D /* twitterGaganTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = twitterGaganTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC23F441B5F74E40080E31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC23F451B5F74E40080E31D /* twitterGaganTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = twitterGaganTests.m; sourceTree = "<group>"; };
+		CEC23F501B5F75F90080E31D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CEC23F511B5F75F90080E31D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		CEC23F521B5F75F90080E31D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		CEC23F531B5F75F90080E31D /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		CEC23F581B5F7FC10080E31D /* twitter Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter Icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC23F541B5F75F90080E31D /* Fabric.framework in Frameworks */,
+				CEC23F571B5F75F90080E31D /* TwitterCore.framework in Frameworks */,
+				CEC23F551B5F75F90080E31D /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,10 @@
 		CEC23F1D1B5F74E40080E31D = {
 			isa = PBXGroup;
 			children = (
+				CEC23F501B5F75F90080E31D /* Fabric.framework */,
+				CEC23F511B5F75F90080E31D /* TwitterKit.framework */,
+				CEC23F521B5F75F90080E31D /* TwitterKitResources.bundle */,
+				CEC23F531B5F75F90080E31D /* TwitterCore.framework */,
 				CEC23F281B5F74E40080E31D /* twitterGagan */,
 				CEC23F421B5F74E40080E31D /* twitterGaganTests */,
 				CEC23F271B5F74E40080E31D /* Products */,
@@ -87,6 +104,7 @@
 				CEC23F311B5F74E40080E31D /* ViewController.m */,
 				CEC23F331B5F74E40080E31D /* Main.storyboard */,
 				CEC23F361B5F74E40080E31D /* Images.xcassets */,
+				CEC23F581B5F7FC10080E31D /* twitter Icon.png */,
 				CEC23F381B5F74E40080E31D /* LaunchScreen.xib */,
 				CEC23F291B5F74E40080E31D /* Supporting Files */,
 			);
@@ -129,6 +147,7 @@
 				CEC23F221B5F74E40080E31D /* Sources */,
 				CEC23F231B5F74E40080E31D /* Frameworks */,
 				CEC23F241B5F74E40080E31D /* Resources */,
+				CEC23F4F1B5F75C90080E31D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC23F561B5F75F90080E31D /* TwitterKitResources.bundle in Resources */,
 				CEC23F351B5F74E40080E31D /* Main.storyboard in Resources */,
 				CEC23F3A1B5F74E40080E31D /* LaunchScreen.xib in Resources */,
 				CEC23F371B5F74E40080E31D /* Images.xcassets in Resources */,
+				CEC23F591B5F7FC10080E31D /* twitter Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +234,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEC23F4F1B5F75C90080E31D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 672c42d68d89816fa15745b9c72e41332a0281b2 8c2df611f87f2bb23b00a846282d47c4360e34344cb440981df01b7d773f3e38";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEC23F221B5F74E40080E31D /* Sources */ = {
@@ -349,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterGagan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +400,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterGagan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

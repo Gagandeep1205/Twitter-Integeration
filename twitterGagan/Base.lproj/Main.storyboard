@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlZ-B2-ArW">
+                                <rect key="frame" x="236" y="37" width="128" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="5Hk-ed-xLQ"/>
+                                    <constraint firstAttribute="width" constant="128" id="6Hl-fx-2zp"/>
+                                </constraints>
+                                <state key="normal" image="twitter Icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnActionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ank-wQ-YhR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxx-xh-GA7">
+                                <rect key="frame" x="246" y="258" width="125" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="0q3-Oj-JCo"/>
+                                    <constraint firstAttribute="height" constant="32" id="8IM-x1-AJo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PlZ-B2-ArW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="6F1-dF-UhY"/>
+                            <constraint firstAttribute="centerX" secondItem="PlZ-B2-ArW" secondAttribute="centerX" id="HMz-NW-dgK"/>
+                            <constraint firstItem="jxx-xh-GA7" firstAttribute="centerX" secondItem="PlZ-B2-ArW" secondAttribute="centerX" constant="8.5" id="cGE-Fx-1mp"/>
+                            <constraint firstItem="jxx-xh-GA7" firstAttribute="top" secondItem="PlZ-B2-ArW" secondAttribute="bottom" constant="101" id="u1w-Hb-Jo6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelUserID" destination="jxx-xh-GA7" id="In1-9S-Jcy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="462" y="242"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="twitter Icon.png" width="225" height="225"/>
+    </resources>
 </document>
